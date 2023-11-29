@@ -76,8 +76,9 @@
                             <img src="{{ $arena->photo->getUrl() }}" class="card-img-top" alt="...">
                         @endif
                         <div class="card-body">
-                            <h5 class="card-title">Nomer Lapangan : {{ $arena->number }}</h5>
+                            <h5 class="card-title">Tipe Olahraga : {{ $arena->number }}</h5>
                             <p class="card-text">Harga : Rp{{ number_format($arena->price,2,',','.') }} / Jam</p>
+                            <p class="card-text">Informasi Lapangan : </p>
                             <a href="{{ route('booking', ['number' => $arena->number])  }}" class="btn btn-primary">Booking</a>
                         </div>
                         </div>
